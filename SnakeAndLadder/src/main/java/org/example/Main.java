@@ -5,7 +5,6 @@ public class Main {
         int startPosition=0;
         System.out.println("Start Position : "+startPosition);
         int playerDie=(int) Math.floor(Math.random() * 6 + 1);
-        System.out.println(playerDie);
-        
+        System.out.println(playerDie); 
     }
 }
