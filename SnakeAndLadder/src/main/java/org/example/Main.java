@@ -7,6 +7,10 @@ public class Main {
         int currentPosition = INITIAL;
         System.out.println("Start Position : " + INITIAL);
         while (currentPosition <= 100) {
+            if (currentPosition == 100) {
+                System.out.println("--------------Winner------------");
+                break;
+            }
             int playerDie = (int) Math.floor(Math.random() * 6 + 1);
             int optionDie = (int) Math.floor(Math.random() * 3);
             System.out.println(optionDie);
@@ -23,6 +27,10 @@ public class Main {
                     break;
             }
             System.out.println("Current place:- " + currentPosition);
+            if (currentPosition > 100) {
+                currentPosition = currentPosition - playerDie;
+            }
         }
     }
 }
+
