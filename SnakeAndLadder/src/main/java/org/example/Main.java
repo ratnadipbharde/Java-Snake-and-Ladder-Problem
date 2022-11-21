@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         int currentPosition = INITIAL;
         System.out.println("Start Position : " + INITIAL);
+        int playCount=0;
         while (currentPosition <= 100) {
             if (currentPosition == 100) {
                 System.out.println("--------------Winner------------");
@@ -26,11 +27,13 @@ public class Main {
                 default:
                     break;
             }
-            System.out.println("Current place:- " + currentPosition);
+            System.out.println("Current place:- " + currentPosition+", count: "+playCount);
             if (currentPosition > 100) {
                 currentPosition = currentPosition - playerDie;
             }
+            playCount++;
         }
+        System.out.println("number of times the dice was played :- "+playCount);
     }
 }
 
