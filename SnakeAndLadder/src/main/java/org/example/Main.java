@@ -22,7 +22,6 @@ public class Main {
                 default:
                     break;
             }
-
             System.out.println("Current place:- " + currentPosition);
         }
     }
