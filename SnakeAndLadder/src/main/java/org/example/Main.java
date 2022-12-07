@@ -5,14 +5,17 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
+
         int player1Position = INITIAL;
         int player2Position = INITIAL;
         while (main.player1(player1Position)<=100 && Main.player2(player2Position) <= 100){
             if (main.player1(player1Position)==100){
+                System.out.println("Player 1  Current place:- " + player1Position );
                 System.out.println("player 1 is winner");
                 return;
             }
             else if (player2(player2Position)==100){
+                System.out.println("Player 2  Current place:- " + player2Position );
                 System.out.println("player 2 is winner");
                 return;
             }else {
@@ -78,4 +81,3 @@ public class Main {
         return player2Position;
     }
 }
-
